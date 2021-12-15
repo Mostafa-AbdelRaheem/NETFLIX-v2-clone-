@@ -1,44 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# NETFLIX_CLONE
 
-## Available Scripts
+This website clone of NETFLIX ,the aim of this project to practice React.js .
+You can visit the site through this [link](https://netflix-v2-clone-c2a82.web.app/)
+This code is made with the help of Clever Programmer Youtube Channel [Clever Programmer](https://www.youtube.com/watch?v=XtMThy8QKqU&ab_channel=CleverProgrammer)
 
-In the project directory, you can run:
+# API
 
-### `npm start`
+The API used in this project is [TMDB API](https://www.themoviedb.org/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Firebase
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+we use Firebase as Database for the website [Firebase](https://firebase.google.com/)
 
-### `npm test`
+# Build Tool
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- React
+- React-router-dom
+- Redux
+- React-youtube
+- TMDB API
+- Movie-trainler
+- Firebase
 
-### `npm run build`
+## Setting up the API
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+we will be using TMDB API .
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Step 1: Signup for an API key
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once you create an account with TMDB, you will be given a license key to start using the API.
 
-### `npm run eject`
+### Step 2: Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Create a new .env file in the root of your project.
+Fill the .env file with your API keys like this:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+API_KEY=**********************
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Step 1: npm are installed from the terminal.
 
-## Learn More
+```
+npm -v
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Step 2 : npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+in order to get all the dependencies we need to install npm
+
+```
+npm install
+```
+
+# Run the project
+
+```
+npm start
+```

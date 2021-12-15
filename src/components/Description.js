@@ -1,11 +1,11 @@
-import React,{useState,useEffect,useRef} from 'react';
+import React,{useState,useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp,faThumbsDown,faPlus } from '@fortawesome/free-solid-svg-icons'
 import movieTrailer from 'movie-trailer';
 import Video from './Video';
 import "../styles/description.css"
-import { selectMyList,addToMyList } from './../features/myListSlice';
-import { useDispatch,useSelector } from 'react-redux';
+import { addToMyList } from './../features/myListSlice';
+import { useDispatch } from 'react-redux';
 
 
 const Description = ({movieInfo,descriptionStatus}) => {

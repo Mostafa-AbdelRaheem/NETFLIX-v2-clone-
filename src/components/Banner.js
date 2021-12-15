@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import Description from './Description';
 import axios from '../utils/axios';
 import requests from '../utils/requests';
 import '../styles/banner.css'
@@ -18,6 +19,12 @@ const Banner = () => {
 
       function truncate(str,n){
           return str?.length>n ? str.substr(0,n-1)+ "..." : str;
+      }
+
+      const[descriptionStatus,setDescriptionStatus]=useState(false);
+
+      const handlePlayBtn=()=>{
+        <Description movieInfo={movie} descriptionStatus={descriptionStatus} />
       }
 
 

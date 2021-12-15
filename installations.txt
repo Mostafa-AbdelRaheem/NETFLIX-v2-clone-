@@ -1,7 +1,0 @@
-React
-Redux
-Fontaswomicons
-react router dom
-
-
-make get started push the email to the signIn page

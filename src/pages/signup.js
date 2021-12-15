@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
-import '../styles/header.css'
 import Jumbotron from "../components/Jumbotron";
 import FAQs from '../components/FAQs';
 import Footer from '../components/Footer';
 import Signin from './signin';
+import '../styles/header.css'
+import '../styles/emailForm.css'
 
 const Signup = () => {
-  // const [emailValue,setEmailValue]=useState('');
   const [startSignIn,setStartSignIn] = useState(false);
 
   const hadnleGetStarted=()=>{
@@ -32,7 +32,6 @@ const Signup = () => {
                                     <option value="English">English</option>    
                                 </select>
                             </form>
-                            {/* <button  className="SingInBtn">Sing in</button> */}
                         </div>
                     </div>
                 </div>
@@ -48,7 +47,6 @@ const Signup = () => {
                               <form className="formFormate">
                                       <label className="emailLabel">Ready to watch? Enter your email to create or restart your membership.</label>
                                   <div className="formGroup">
-                                      {/* <input value={emailValue} onChange={(e)=>setEmailValue(e.target.value) } type="email" className="formInput" placeholder="Email address"  /> */}
                                       <button onClick={hadnleGetStarted} type="submit" className="btn">{`Get Started >`}</button>
                                   </div>
                               </form>
