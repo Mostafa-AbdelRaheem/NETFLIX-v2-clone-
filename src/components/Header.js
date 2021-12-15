@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
 import '../styles/header.css'
 import EmailForm from './EmailForm';
 
@@ -16,10 +15,8 @@ const Header = () => {
                     <form className="formContainer">
                         <select className="language">
                             <option value="English">English</option>    
-                            {/* <option value="Arabic">Arabic</option> */}
                         </select>
                     </form>
-                    {/* <button  className="SingInBtn">Sing in</button> */}
                 </div>
             </div>
         </div>

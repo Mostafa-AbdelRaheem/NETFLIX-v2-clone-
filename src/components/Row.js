@@ -24,7 +24,6 @@ const Row = ({title,fetchUrl}) => {
     
     const handleClick=(movie)=>{
         setMovieInfo(movie);
-        // console.log("this is ROW all movies",movie)
         setDescriptionStatus(true);
         
     }

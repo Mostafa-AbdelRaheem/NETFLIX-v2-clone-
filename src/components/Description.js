@@ -1,12 +1,12 @@
 import React,{useContext,useState,useEffect,useRef} from 'react';
-// import {useSpring,animated} from 'react-spring';
 import { MovieDataContext } from './Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp,faThumbsDown,faPlus } from '@fortawesome/free-solid-svg-icons'
-import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import Video from './Video';
 import "../styles/description.css"
+import { selectMyList,addToMyList } from './../features/myListSlice';
+import { useDispatch,useSelector } from 'react-redux';
 
 export const MovieURLContext=React.createContext()
 
@@ -16,6 +16,14 @@ const Description = () => {
     const [movieStatus,setMovieStatus]=useState(false);
     const [trailerUrl,setTrailerUrl] = useState("");
 
+    const mylist=useSelector(selectMyList)
+    console.log("mylist",mylist);
+    console.log("moviesInfo",moviesInfo);
+
+    const dispatch = useDispatch();
+    const handleAddToMyList=()=>{
+        dispatch(addToMyList(moviesInfo))
+    }
 
 // for video
 const[showVideo,setShowVideo]=useState(false)
@@ -58,7 +66,7 @@ const handlePLay=()=>{
                                 <img src="./images/icons/play.png"/>
                                 <p>play Trailer</p>
                             </i>
-                            <i className="plusContainer">
+                            <i onClick={handleAddToMyList} className="plusContainer">
                             <FontAwesomeIcon className="plus" icon={faPlus} size="lg"/>
                             </i>
                             <i className="thumbUpContainer">

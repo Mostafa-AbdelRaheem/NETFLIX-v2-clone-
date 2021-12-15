@@ -21,6 +21,7 @@ const Signin = () => {
             alert(error.message )
 
         })
+        setTimeout(history.push("/"),1000);
 
     }
     const signIn=(e)=>{
@@ -35,7 +36,7 @@ const Signin = () => {
 
         })
 
-        setTimeout(history.push("/"),1000)
+        setTimeout(history.push("/"),1000);
     }
 
 
