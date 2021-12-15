@@ -1,0 +1,11 @@
+.videoContainer {
+  width: 969px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 0;
+  border-radius: 15px;
+}

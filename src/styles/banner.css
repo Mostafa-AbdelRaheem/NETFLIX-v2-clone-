@@ -1,0 +1,102 @@
+.bannerContainer {
+  position: relative;
+  color: #fff;
+  object-fit: contain;
+  height: 100vh;
+  z-index: -2;
+  margin-bottom: -200px;
+}
+
+.bannerContainer .bannerContent {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
+}
+
+.bannerContainer .bannerContent .bannerTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+.bannerContainer .bannerContent .bannerButtons {
+  position: absolute;
+  width: 300px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bannerContainer .bannerContent .bannerPlayButton {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 40px;
+  width: 110px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bannerContainer .bannerContent .bannerPlayButton img {
+  margin: 5px 5px;
+  max-width: 25px;
+  max-height: 25px;
+}
+.bannerContainer .bannerContent .bannerPlayButton p {
+  margin: 2px auto auto 10px;
+  color: #333;
+  font-weight: 700;
+}
+.bannerContainer .bannerContent .bannerPlayButton:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bannerContainer .bannerContent .bannerInfoButton {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 1rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 5px;
+}
+.bannerContainer .bannerContent .bannerInfoButton:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+.bannerContainer .bannerContent .bannerInfoButton img {
+  margin: 5px 5px;
+  max-width: 25px;
+  max-height: 25px;
+}
+.bannerContainer .bannerContent .bannerInfoButton p {
+  margin: 5px auto auto 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.bannerContainer .bannerContent .bannerOverview {
+  max-width: 360px;
+  height: 80px;
+  line-height: 1.3;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+}
+
+.bannerContainer .bannerBottom {
+  /* position: absolute; */
+  height: 100vh;
+
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  z-index: 5;
+}

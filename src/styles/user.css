@@ -1,0 +1,18 @@
+.profileContainer {
+  margin: 20px;
+}
+
+.profileContainer .userImageContainer {
+  width: 160px;
+  height: 160px;
+}
+
+.profileContainer .userImageContainer .userImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.profileContainer .userName {
+  color: white;
+}

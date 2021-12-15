@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Mostafa",
+      "image": "./images/users/1.png",
+      "alt": "user1"
+    },
+    {
+      "id": 2,
+      "name": "Ahmed",
+      "image": "./images/users/2.png",
+      "alt": "user2"
+    },
+    {
+      "id": 3,
+      "name": "Kareem",
+      "image": "./images/users/5.png",
+      "alt": "user5"
+    },
+    {
+      "id": 4,
+      "name": "Assem",
+      "image": "./images/users/4.png",
+      "alt": "user4"
+    },
+    {
+        "id": 5,
+        "name": "Kid",
+        "image": "./images/users/3.png",
+        "alt": "kidUser"
+      }
+  ]

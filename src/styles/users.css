@@ -1,0 +1,21 @@
+.usersContainer {
+  background-color: var(--secondary-color);
+}
+
+.usersContainer .logoContainer {
+  margin: 20px 0 0 20px;
+  width: 120px;
+}
+
+.usersContainer .logoContainer img {
+  width: 100%;
+}
+
+.usersContainer .userWatching {
+  color: white;
+  text-align: center;
+}
+
+.usersContainer .userContainer {
+  display: flex;
+}

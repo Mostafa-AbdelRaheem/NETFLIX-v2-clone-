@@ -1,0 +1,21 @@
+.footerBox {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.footerBox ul {
+  display: flex;
+  flex-direction: column;
+}
+.footerBox li {
+  margin-top: 5px;
+}
+.footerBox a {
+  text-decoration: none;
+  color: #757575;
+}
+.footerBox a:hover {
+  text-decoration: underline;
+  color: #757575;
+}

@@ -1,0 +1,131 @@
+.singinContainer {
+  color: white;
+}
+.singinContainer .logoContainer {
+  margin: 5px 15px;
+  position: absolute;
+  z-index: 0;
+}
+
+.singinContainer .logo {
+  max-width: 160px;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+}
+.singinContainer .signinLanding {
+  min-height: 100vh;
+  background-image: url("https://media-assets-05.thedrum.com/cache/images/thedrum-prod/s3-news-tmp-10557-netflixa--default--1280.jpg");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: -2;
+}
+.singinContainer .signinLanding .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+  z-index: -1;
+}
+.singinContainer .signinBox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0 0 0 / 60%);
+  padding: 50px;
+  width: 400px;
+}
+
+.singinContainer .signinBox .signinForm .data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.singinContainer .signinBox .signinForm .data input {
+  height: 55px;
+  margin: 5px 0;
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+
+.singinContainer .signinBox .signinForm .signinBtn {
+  background-color: var(--main-color);
+  color: white;
+  width: 300px;
+  display: block;
+  height: 55px;
+  margin: 15px auto;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.singinContainer .signinBox .signinForm .signinBtn:hover {
+  background-color: #e50914;
+}
+.singinContainer .signinBox .signinForm .signinBtn .link {
+  color: white;
+}
+.singinContainer .signinBox .signinForm .signinCheckbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #757575;
+}
+
+.singinContainer .signinBox .signinForm .signinCheckbox .checkbox {
+  padding-top: 5px;
+}
+.singinContainer .signinBox .signinForm .signinCheckbox .needHelp a {
+  display: block;
+  margin-top: -10px;
+  text-decoration: none;
+  color: #757575;
+}
+
+.singinContainer .signinBox .facebook {
+  display: flex;
+}
+.singinContainer .signinBox .facebook .facebookIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.singinContainer .signinBox .facebook .facebookIcon img {
+  width: 100%;
+  height: 100%;
+}
+.singinContainer .signinBox p {
+  color: #757575;
+}
+.singinContainer .signinBox p .signupLink {
+  cursor: pointer;
+  color: white;
+}
+.singinContainer .signinBox p .signupLink:hover {
+  text-decoration: underline;
+}
+
+.singinContainer .signinBox p .learnMore {
+  color: white;
+}
+.singinContainer .signinBox .facebook a {
+  text-decoration: none;
+  color: #757575;
+}
+.singinContainer .footer {
+  background-color: rgb(0 0 0 / 60%);
+}
