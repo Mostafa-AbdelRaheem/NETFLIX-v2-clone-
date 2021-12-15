@@ -110,4 +110,5 @@
   background-color: var(--main-color);
   text-decoration: underline;
   cursor: pointer;
+  transition: transform 450ms;
 }

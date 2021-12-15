@@ -1,5 +1,4 @@
-import React,{useContext,useState,useEffect,useRef} from 'react';
-import { MovieDataContext } from './Row';
+import React,{useState,useEffect,useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp,faThumbsDown,faPlus } from '@fortawesome/free-solid-svg-icons'
 import movieTrailer from 'movie-trailer';
@@ -8,25 +7,18 @@ import "../styles/description.css"
 import { selectMyList,addToMyList } from './../features/myListSlice';
 import { useDispatch,useSelector } from 'react-redux';
 
-export const MovieURLContext=React.createContext()
 
-const Description = () => {
-    const moviesInfo =useContext(MovieDataContext);
+const Description = ({movieInfo,descriptionStatus}) => {
+    const[showVideo,setShowVideo]=useState(false)
     const [movieData,setMovieData]=useState([]);
     const [movieStatus,setMovieStatus]=useState(false);
     const [trailerUrl,setTrailerUrl] = useState("");
 
-    const mylist=useSelector(selectMyList)
-    console.log("mylist",mylist);
-    console.log("moviesInfo",moviesInfo);
-
     const dispatch = useDispatch();
     const handleAddToMyList=()=>{
-        dispatch(addToMyList(moviesInfo))
+        dispatch(addToMyList(movieInfo))
     }
 
-// for video
-const[showVideo,setShowVideo]=useState(false)
 
 const handlePLay=()=>{
     setShowVideo(prev=>!prev);
@@ -40,9 +32,9 @@ const handlePLay=()=>{
 }
 
     useEffect(() => {
-        setMovieData(moviesInfo.movieInfo)
-        setMovieStatus(moviesInfo.descriptionStatus)
-      }, [moviesInfo]);
+        setMovieData(movieInfo)
+        setMovieStatus(descriptionStatus)
+      }, [movieInfo]);
      
       
     const handleClick=()=>{

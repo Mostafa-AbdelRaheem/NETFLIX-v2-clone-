@@ -1,26 +1,19 @@
-import React, { useState,useEffect,useToggle } from 'react';
-import { useHistory } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import React, { useState,useEffect } from 'react';
+import { useDispatch} from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import '../styles/navbar.css'
-import { useDispatch, useSelector } from 'react-redux';
-import { logout, selectUser } from '../features/userSlice';
+import { logout } from '../features/userSlice';
 import { auth } from '../utils/firebase';
+import '../styles/navbar.css'
 
 const Navbar = () => {
-    const user = useSelector (selectUser);
-
-    console.log("Nav",user)
     const [show,handleShow]=useState(false);
     const [list,setList]=useState(false);
-    const history = useHistory();
     const dispatch=useDispatch();
 
     const userLogout=()=>{
         dispatch(logout());
         auth.signOut();
-        // history.push("/singup")
 
     }
 
@@ -54,9 +47,7 @@ const Navbar = () => {
             </div>
             <div className="RightSideNavbar">
                 <FontAwesomeIcon className="searchIcon" icon={faSearch}/>
-                {/* <Link className="KidesLink" to="#">Kides</Link> */}
                 <div onClick={toggleList} className="user">
-                {/* onClick={()=>history.push('/profile')} */}
                     <img  className="userAvatar" src="./images/users/2.png" alt="userAvatar"/>
                 {list&&<ul className='list'>
                     <li><a onClick={userLogout}>Logout</a></li>

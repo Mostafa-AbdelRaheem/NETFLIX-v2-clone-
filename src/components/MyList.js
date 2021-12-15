@@ -1,21 +1,27 @@
-import React from 'react';
-import "../styles/row.css";
- const MyList = ({title,list}) => {
+import React,{useState} from 'react';
+import Description from './Description';
+import "../styles/mylist.css";
 
-    // const [movies,setMovies] = useState([]);
-    // const[movieInfo,setMovieInfo]=useState([]);
-    // const[descriptionStatus,setDescriptionStatus]=useState(false);
+
+export const MovieDataContext=React.createContext()
+
+
+ const MyList = ({title,list}) => {
+    console.log("list of my list movies",list)
+    const [movies,setMovies] = useState([]);
+    const[movieInfo,setMovieInfo]=useState([]);
+    const[descriptionStatus,setDescriptionStatus]=useState(false);
     
-    // const handleClick=(movie)=>{
-    //     setMovieInfo(movie);
-    //     setDescriptionStatus(true);
+    const handleClick=(movie)=>{
+        setMovieInfo(movie);
+        setDescriptionStatus(true);
         
-    // }
+    }
 
      return (
-        <div className="row">
+        <div className="mylistContainer">
             <h2>{title}</h2>
-            {/* <div className="rowPosters">
+            <div className="rowPosters">
                 {list.map((movie)=>{
                     return (
                         <img key={movie.id}
@@ -27,10 +33,7 @@ import "../styles/row.css";
                         )
                     })}
             </div>
-            {<MovieDataContext.Provider value={{movieInfo,descriptionStatus}} >
-                <Description />
-            </MovieDataContext.Provider>} */}
-
+                <Description movieInfo={movieInfo} descriptionStatus={descriptionStatus}/>
          </div>
      );
  }

@@ -1,6 +1,5 @@
 import React,{ useState} from 'react';
 import FAQ from './FAQ';
-import EmailForm from './EmailForm';
 import faqs from '../fixtures/faqs.json'
 import '../styles/faqs.css'
 

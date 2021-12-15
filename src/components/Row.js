@@ -3,14 +3,11 @@ import Description from './Description';
 import axios from '../utils/axios';
 import "../styles/row.css";
 
-export const MovieDataContext=React.createContext()
-
 
 const Row = ({title,fetchUrl}) => {
     const [movies,setMovies] = useState([]);
     const[movieInfo,setMovieInfo]=useState([]);
     const[descriptionStatus,setDescriptionStatus]=useState(false);
-    // const [trailerUrl,setTrailerUrl] = useState("");
     useEffect(() => {
 
         async function fetchData(){
@@ -42,9 +39,7 @@ const Row = ({title,fetchUrl}) => {
                         )
                     })}
             </div>
-            {<MovieDataContext.Provider value={{movieInfo,descriptionStatus}} >
-                <Description />
-            </MovieDataContext.Provider>}
+                <Description movieInfo={movieInfo} descriptionStatus={descriptionStatus} />
         </div>
     );
 
